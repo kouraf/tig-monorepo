@@ -17,7 +17,7 @@ fn cli() -> Command {
         )
         .arg(
             arg!(--fuel [FUEL] "Optional maximum fuel parameter for WASM VM")
-                .default_value("1000000000")
+                .default_value("10000000000")
                 .value_parser(clap::value_parser!(u64)),
         )
         .arg(
